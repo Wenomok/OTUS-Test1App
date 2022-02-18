@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAC8F7D827BEFB3900A89C2B /* ImageViewButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8F7D727BEFB3900A89C2B /* ImageViewButtonView.swift */; };
+		FAC8F7DA27BEFB7300A89C2B /* ImageViewButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8F7D927BEFB7300A89C2B /* ImageViewButtonView.xib */; };
+		FAC8F7DC27BEFD4000A89C2B /* UIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8F7DB27BEFD4000A89C2B /* UIKitView.swift */; };
+		FAE93A99278B467E00DCC0F4 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93A98278B467E00DCC0F4 /* ListScreen.swift */; };
+		FAE93A9B278B469700DCC0F4 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93A9A278B469700DCC0F4 /* FirstScreen.swift */; };
+		FAE93A9D278B46D700DCC0F4 /* TabWithModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93A9C278B46D700DCC0F4 /* TabWithModalScreen.swift */; };
+		FAE93A9F278B47F000DCC0F4 /* ListSubScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93A9E278B47F000DCC0F4 /* ListSubScreen.swift */; };
+		FAE93AA1278B493200DCC0F4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93AA0278B493200DCC0F4 /* ContentViewModel.swift */; };
+		FAE93AA3278B4D0A00DCC0F4 /* ModalScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE93AA2278B4D0A00DCC0F4 /* ModalScreen.swift */; };
 		FAEF3DBE2789BAC7001FC521 /* otus_1testappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF3DBD2789BAC7001FC521 /* otus_1testappApp.swift */; };
 		FAEF3DC02789BAC7001FC521 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF3DBF2789BAC7001FC521 /* ContentView.swift */; };
 		FAEF3DC22789BAC8001FC521 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF3DC12789BAC8001FC521 /* Assets.xcassets */; };
@@ -14,6 +23,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAC8F7D727BEFB3900A89C2B /* ImageViewButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewButtonView.swift; sourceTree = "<group>"; };
+		FAC8F7D927BEFB7300A89C2B /* ImageViewButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewButtonView.xib; sourceTree = "<group>"; };
+		FAC8F7DB27BEFD4000A89C2B /* UIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitView.swift; sourceTree = "<group>"; };
+		FAE93A98278B467E00DCC0F4 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		FAE93A9A278B469700DCC0F4 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
+		FAE93A9C278B46D700DCC0F4 /* TabWithModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabWithModalScreen.swift; sourceTree = "<group>"; };
+		FAE93A9E278B47F000DCC0F4 /* ListSubScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSubScreen.swift; sourceTree = "<group>"; };
+		FAE93AA0278B493200DCC0F4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FAE93AA2278B4D0A00DCC0F4 /* ModalScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreen.swift; sourceTree = "<group>"; };
 		FAEF3DBA2789BAC7001FC521 /* otus.1testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otus.1testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF3DBD2789BAC7001FC521 /* otus_1testappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = otus_1testappApp.swift; sourceTree = "<group>"; };
 		FAEF3DBF2789BAC7001FC521 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +50,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA32373827BAEF8400934E6A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FAE93A9A278B469700DCC0F4 /* FirstScreen.swift */,
+				FAE93A98278B467E00DCC0F4 /* ListScreen.swift */,
+				FAE93A9E278B47F000DCC0F4 /* ListSubScreen.swift */,
+				FAE93A9C278B46D700DCC0F4 /* TabWithModalScreen.swift */,
+				FAE93AA2278B4D0A00DCC0F4 /* ModalScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAC8F7D627BEEAD900A89C2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8F7D727BEFB3900A89C2B /* ImageViewButtonView.swift */,
+				FAC8F7D927BEFB7300A89C2B /* ImageViewButtonView.xib */,
+				FAC8F7DB27BEFD4000A89C2B /* UIKitView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FAEF3DB12789BAC7001FC521 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +93,9 @@
 			children = (
 				FAEF3DBD2789BAC7001FC521 /* otus_1testappApp.swift */,
 				FAEF3DBF2789BAC7001FC521 /* ContentView.swift */,
+				FAE93AA0278B493200DCC0F4 /* ContentViewModel.swift */,
+				FAC8F7D627BEEAD900A89C2B /* View */,
+				FA32373827BAEF8400934E6A /* Screens */,
 				FAEF3DC12789BAC8001FC521 /* Assets.xcassets */,
 				FAEF3DC32789BAC8001FC521 /* Preview Content */,
 			);
@@ -127,6 +170,7 @@
 			files = (
 				FAEF3DC52789BAC8001FC521 /* Preview Assets.xcassets in Resources */,
 				FAEF3DC22789BAC8001FC521 /* Assets.xcassets in Resources */,
+				FAC8F7DA27BEFB7300A89C2B /* ImageViewButtonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +181,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC8F7D827BEFB3900A89C2B /* ImageViewButtonView.swift in Sources */,
 				FAEF3DC02789BAC7001FC521 /* ContentView.swift in Sources */,
+				FAE93AA3278B4D0A00DCC0F4 /* ModalScreen.swift in Sources */,
+				FAE93A9B278B469700DCC0F4 /* FirstScreen.swift in Sources */,
+				FAE93A99278B467E00DCC0F4 /* ListScreen.swift in Sources */,
+				FAE93AA1278B493200DCC0F4 /* ContentViewModel.swift in Sources */,
+				FAE93A9D278B46D700DCC0F4 /* TabWithModalScreen.swift in Sources */,
+				FAE93A9F278B47F000DCC0F4 /* ListSubScreen.swift in Sources */,
 				FAEF3DBE2789BAC7001FC521 /* otus_1testappApp.swift in Sources */,
+				FAC8F7DC27BEFD4000A89C2B /* UIKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

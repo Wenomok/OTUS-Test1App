@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var contentViewModel: ContentViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $contentViewModel.selection) {
+            FirstScreen(selection: $contentViewModel.selection,
+                        toNextScreenSecondTab: $contentViewModel.toNextScreenSecondTab)
+                .tabItem({
+                    Text("First")
+                })
+                .tag(0)
+            ListScreen(toNextScreen: $contentViewModel.toNextScreenSecondTab)
+                .tabItem({
+                    Text("List")
+                })
+                .tag(1)
+            TabWithModalScreen()
+                .tabItem({
+                    Text("Modal")
+                })
+                .tag(2)
+        }
     }
 }
 
