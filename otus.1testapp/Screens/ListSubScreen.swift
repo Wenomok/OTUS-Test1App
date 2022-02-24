@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ListSubScreen: View {
+    var value: Int
+    
     var body: some View {
-        Text("ListSubScreen")
+        Text("ListSubScreen \(value)")
     }
 }
 
 struct ListSubScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ListSubScreen()
+        ListSubScreen(value: 0)
     }
 }

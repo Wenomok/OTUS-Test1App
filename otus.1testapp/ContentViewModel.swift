@@ -9,5 +9,5 @@ import SwiftUI
 
 final class ContentViewModel: ObservableObject {
     @Published var selection = 0
-    @Published var toNextScreenSecondTab = false
+    @Published var toNextScreenSecondTabId: Int?
 }

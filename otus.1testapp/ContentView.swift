@@ -13,12 +13,12 @@ struct ContentView: View {
     var body: some View {
         TabView(selection: $contentViewModel.selection) {
             FirstScreen(selection: $contentViewModel.selection,
-                        toNextScreenSecondTab: $contentViewModel.toNextScreenSecondTab)
+                        toNextScreenSecondTabId: $contentViewModel.toNextScreenSecondTabId)
                 .tabItem({
                     Text("First")
                 })
                 .tag(0)
-            ListScreen(toNextScreen: $contentViewModel.toNextScreenSecondTab)
+            ListScreen(toNextScreenId: $contentViewModel.toNextScreenSecondTabId)
                 .tabItem({
                     Text("List")
                 })

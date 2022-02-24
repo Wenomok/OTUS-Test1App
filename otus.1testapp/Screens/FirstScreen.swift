@@ -9,13 +9,23 @@ import SwiftUI
 
 struct FirstScreen: View {
     @Binding<Int> var selection: Int
-    @Binding<Bool> var toNextScreenSecondTab: Bool
+    @Binding<Int?> var toNextScreenSecondTabId: Int?
     
     var body: some View {
-        NavigationView {
-            Button("To second tab") {
+        VStack {
+            Button("To second tab list item 3") {
                 selection = 1
-                toNextScreenSecondTab = true
+                toNextScreenSecondTabId = 3
+            }
+            Spacer().frame(height: 20.0)
+            Button("To second tab list item 9") {
+                selection = 1
+                toNextScreenSecondTabId = 9
+            }
+            Spacer().frame(height: 20.0)
+            Button("To second tab list item 5") {
+                selection = 1
+                toNextScreenSecondTabId = 5
             }
         }
     }
@@ -23,6 +33,6 @@ struct FirstScreen: View {
 
 struct SecondScreen_Previews: PreviewProvider {
     static var previews: some View {
-        FirstScreen(selection: .constant(0), toNextScreenSecondTab: .constant(false))
+        FirstScreen(selection: .constant(0), toNextScreenSecondTabId: .constant(0))
     }
 }

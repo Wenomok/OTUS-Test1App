@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ListScreen: View {
-    @Binding<Bool> var toNextScreen: Bool
+    @Binding<Int?> var toNextScreenId: Int?
+    
+    var data: [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ListSubScreen(), isActive: $toNextScreen, label: {
-                    Text("Open subscreen")
-                })
+                ForEach (0..<data.count) { index in
+                    let value = data[index]
+                    
+                    NavigationLink(destination: ListSubScreen(value: value), tag: value, selection: $toNextScreenId, label: {
+                        Button("Open subscreen \(data[index])") {
+                            toNextScreenId = data[index]
+                        }
+                    })
+                }
             }
             .navigationTitle(Text("List"))
         }
@@ -24,6 +32,6 @@ struct ListScreen: View {
 
 struct ListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ListScreen(toNextScreen: .constant(false))
+        ListScreen(toNextScreenId: .constant(0))
     }
 }
